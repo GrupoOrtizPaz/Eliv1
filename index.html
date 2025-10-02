@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elidanza - Academia de Danza</title>
+    <link rel="icon" type="image/svg+xml" href="imagenes/PRUEBA DE LOGO.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <div class="banner-left">
+                <span class="banner-text">Academia de Danza</span>
+            </div>
+            <div class="banner-right">
+                <svg class="globe-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/>
+                </svg>
+                <span class="banner-text">Guatemala</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="./imagenes/PRUEBA DE LOGO.svg" alt="Elidanza Logo" class="logo" loading="eager" onerror="console.log('Error loading logo')">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#eventos" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#equipo" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ubicaciones" class="nav-link">Ubicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clases" class="nav-link">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#historia" class="nav-link">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section id="inicio" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="./imagenes/videoweb1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="banner-container">
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">Descubre tu pasión por la danza</h1>
+                <p class="hero-subtitle">Únete a la mejor academia de danza de Guatemala</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contáctanos
+                    </a>
+                    <a href="#clases" class="btn btn-secondary">Ver Clases</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="eventos" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Eventos</h2>
+                <p class="section-subtitle">Descubre nuestras presentaciones y eventos especiales</p>
+            </div>
+            <div class="events-carousel-container">
+                <div class="events-carousel" id="eventsCarousel">
+                    <div class="event-card" data-event="2023">
+                        <div class="event-image">
+                            <img src="./imagenes/PRESENTACIONES/Muñecas.jpg" alt="La Muñeca de las Hadas" loading="eager" onerror="this.style.display='none'; console.log('Error loading event image 1')">
+                            <div class="event-overlay">
+                                <div class="event-status completed">Realizada</div>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-header">
+                                <span class="event-year">2023</span>
+                                <h3>La Muñeca de las Hadas</h3>
+                            </div>
+                            <div class="event-details">
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Teatro (Zona 2), Ciudad de Guatemala</p>
+                                <p class="event-description">Un relato de fantasía con estética pastel, utilería artesanal y transiciones precisas. Destacó por la musicalidad y el trabajo en equipo del elenco.</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://www.behance.net/gallery/193858333/LA-MUNECA-DE-LAS-HADAS" class="btn btn-outline" target="_blank">
+                                    <i class="fas fa-images"></i> Ver Galería
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card" data-event="2024">
+                        <div class="event-image">
+                            <img src="./imagenes/PRESENTACIONES/Pais de las maravillas.jpg" alt="Alicia en el País de las Maravillas" loading="eager" onerror="this.style.display='none'; console.log('Error loading event image 2')">
+                            <div class="event-overlay">
+                                <div class="event-status completed">Realizada</div>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-header">
+                                <span class="event-year">2024</span>
+                                <h3>Alicia en el País de las Maravillas</h3>
+                            </div>
+                            <div class="event-details">
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Teatro capitalino, Ciudad de Guatemala</p>
+                                <p class="event-description">Una versión familiar que combinó técnica clásica con acentos de jazz. Alicia, el Sombrerero y la Reina de Corazones condujeron escenas dinámicas.</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://www.instagram.com/elidanza.gt/" class="btn btn-outline" target="_blank">
+                                    <i class="fab fa-instagram"></i> Ver en Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card" data-event="2025">
+                        <div class="event-image">
+                            <img src="./imagenes/PRESENTACIONES/Bosque.jpg" alt="El Bosque Encantado" loading="eager" onerror="this.style.display='none'; console.log('Error loading event image 3')">
+                            <div class="event-overlay">
+                                <div class="event-status upcoming">Próxima</div>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-header">
+                                <span class="event-year">2025</span>
+                                <h3>El Bosque Encantado</h3>
+                            </div>
+                            <div class="event-details">
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Lugar por anunciar</p>
+                                <p class="event-description">Un cuento coreográfico inspirado en la naturaleza y la fantasía. Atmósferas etéreas con paleta verde-lila y números corales.</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Preinscribirse
+                                </a>
+                                <a href="https://www.behance.net/gallery/235680581/Eli-danza" class="btn btn-outline" target="_blank">
+                                    <i class="fas fa-eye"></i> Sesión Previa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="ubicaciones" class="locations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Sucursales</h2>
+                <p class="section-subtitle">Encuentra la ubicación más conveniente para ti</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card" onclick="window.open('https://maps.app.goo.gl/4PNDcBGXpvUaPqYU7', '_blank')">
+                    <div class="location-image">
+                        <img src="./imagenes/ubicacionz1.jpg" alt="Sede Avenida Elena" loading="lazy" onerror="this.style.display='none'; console.log('Error loading location image 1')">
+                        <div class="location-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Ver en Google Maps</span>
+                        </div>
+                    </div>
+                    <div class="location-content">
+                        <div class="location-header">
+                            <h3>Avenida Elena</h3>
+                            <p class="location-type">Sede Principal</p>
+                        </div>
+                        <div class="location-info">
+                            <div class="location-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Avenida Elena, Ciudad de Guatemala</span>
+                            </div>
+                            <div class="location-detail">
+                                <i class="fas fa-mirror"></i>
+                                <span>Salones con espejos y ambiente familiar</span>
+                            </div>
+                            <div class="location-detail">
+                                <i class="fas fa-phone"></i>
+                                <span>+502 3664-6602</span>
+                            </div>
+                        </div>
+                        <div class="location-actions">
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-whatsapp"></i> Contactar
+                            </a>
+                            <a href="https://maps.app.goo.gl/4PNDcBGXpvUaPqYU7" class="btn btn-outline" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fas fa-map"></i> Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-card" onclick="window.open('https://maps.app.goo.gl/uiMZ5AZs9ZWfsacu6', '_blank')">
+                    <div class="location-image">
+                        <img src="./imagenes/ubicacionz15.jpg" alt="Sede Arkadia Zona 10" loading="lazy" onerror="this.style.display='none'; console.log('Error loading location image 2')">
+                        <div class="location-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Ver en Google Maps</span>
+                        </div>
+                    </div>
+                    <div class="location-content">
+                        <div class="location-header">
+                            <h3>Arkadia, Zona 10</h3>
+                            <p class="location-type">Sede Nueva</p>
+                        </div>
+                        <div class="location-info">
+                            <div class="location-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Scandinavia Gym, Zona 10</span>
+                            </div>
+                            <div class="location-detail">
+                                <i class="fas fa-parking"></i>
+                                <span>Parqueo gratis disponible</span>
+                            </div>
+                            <div class="location-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Martes y Jueves - Confirma horarios por WhatsApp</span>
+                            </div>
+                            <div class="location-detail">
+                                <i class="fas fa-users"></i>
+                                <span>Grupos para niñas, adolescentes y adultos</span>
+                            </div>
+                        </div>
+                        <div class="location-actions">
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-whatsapp"></i> Confirmar Horarios
+                            </a>
+                            <a href="https://maps.app.goo.gl/uiMZ5AZs9ZWfsacu6" class="btn btn-outline" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fas fa-map"></i> Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">Conoce a los profesionales que hacen posible tu aprendizaje</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="./imagenes/Directora.jpg" alt="Eli - Fundadora y Directora" loading="eager" onerror="this.style.display='none'; console.log('Error loading director image')">
+                    </div>
+                    <div class="member-info">
+                        <h3>Eli - Fundadora</h3>
+                        <p class="member-role">Directora Artística</p>
+                        <p class="member-description">Con más de 15 años de experiencia en danza, Eli fundó Elidanza con la visión de crear un espacio donde la pasión por la danza se convierta en arte.</p>
+                        <div class="member-social">
+                            <a href="https://www.instagram.com/elidanza.gt/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:elidanzagt@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="./imagenes/eli-logo.jpg" alt="Instructora" loading="lazy" onerror="this.style.display='none'; console.log('Error loading instructor image 1')">
+                    </div>
+                    <div class="member-info">
+                        <h3>María González</h3>
+                        <p class="member-role">Instructora de Ballet</p>
+                        <p class="member-description">Especialista en ballet clásico con formación internacional. María guía a nuestros estudiantes en la técnica más pura de la danza.</p>
+                        <div class="member-social">
+                            <a href="https://www.instagram.com/elidanza.gt/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/+50236646602" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="./imagenes/eli-logo.jpg" alt="Instructor" loading="lazy" onerror="this.style.display='none'; console.log('Error loading instructor image 2')">
+                    </div>
+                    <div class="member-info">
+                        <h3>Carlos Méndez</h3>
+                        <p class="member-role">Instructor de Salsa</p>
+                        <p class="member-description">Experto en ritmos latinos con más de 10 años enseñando salsa y bachata. Carlos trae la energía y pasión de los ritmos caribeños.</p>
+                        <div class="member-social">
+                            <a href="https://www.instagram.com/elidanza.gt/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/+50236646602" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="clases" class="classes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Clases</h2>
+                <p class="section-subtitle">Descubre nuestras especialidades en danza para todas las edades</p>
+            </div>
+            
+            <!-- Benefits Section -->
+            <div class="benefits-section">
+                <h3>Beneficios de la Danza</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <span>Flexibilidad</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Coordinación</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Resistencia</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>Acondicionamiento físico</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Desenvolvimiento escénico</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-users"></i>
+                        <span>Trabajo en equipo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="classes-tabs">
+                <button class="tab-btn active" data-tab="presencial">Clases Presenciales</button>
+                <button class="tab-btn" data-tab="online">Clases Online</button>
+            </div>
+            <div class="classes-content">
+                <div class="tab-content active" id="presencial">
+                    <div class="classes-grid">
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h3>Baby Ballet</h3>
+                            <p class="class-level">11 meses - 2 años</p>
+                            <p class="class-description">Enfoque lúdico con música, movimiento, coordinación y socialización para los más pequeños.</p>
+                            <ul class="class-features">
+                                <li>Desarrollo de coordinación motriz</li>
+                                <li>Socialización temprana</li>
+                                <li>Música y movimiento</li>
+                                <li>Ambiente familiar y seguro</li>
+                            </ul>
+                            <div class="class-locations">
+                                <span><i class="fas fa-map-marker-alt"></i> Avenida Elena</span>
+                            </div>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Consultar Horarios</a>
+                        </div>
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-ballet-shoes"></i>
+                            </div>
+                            <h3>Ballet Clásico</h3>
+                            <p class="class-level">3 - 12 años</p>
+                            <p class="class-description">Técnica clásica combinada con disciplina, gracia y expresión artística para formar bailarines completos.</p>
+                            <ul class="class-features">
+                                <li>Técnica clásica profesional</li>
+                                <li>Desarrollo de disciplina</li>
+                                <li>Expresión artística</li>
+                                <li>Salones con espejos</li>
+                            </ul>
+                            <div class="class-locations">
+                                <span><i class="fas fa-map-marker-alt"></i> Avenida Elena • Arkadia Zona 10</span>
+                            </div>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Inscribirse</a>
+                        </div>
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3>Jazz Moderno</h3>
+                            <p class="class-level">7 - 12 años</p>
+                            <p class="class-description">Base contemporánea con música actual, fomentando la creatividad y el desarrollo del estilo personal.</p>
+                            <ul class="class-features">
+                                <li>Música actual y moderna</li>
+                                <li>Desarrollo de creatividad</li>
+                                <li>Estilo personal único</li>
+                                <li>Base contemporánea sólida</li>
+                            </ul>
+                            <div class="class-locations">
+                                <span><i class="fas fa-map-marker-alt"></i> Avenida Elena • Arkadia Zona 10</span>
+                            </div>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Inscribirse</a>
+                        </div>
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3>Clases para Adultos</h3>
+                            <p class="class-level">Principiantes a Avanzados</p>
+                            <p class="class-description">Programas especializados para adultos que desean iniciar o continuar su pasión por la danza.</p>
+                            <ul class="class-features">
+                                <li>Grupos para principiantes</li>
+                                <li>Niveles avanzados disponibles</li>
+                                <li>Horarios flexibles</li>
+                                <li>Ambiente profesional</li>
+                            </ul>
+                            <div class="class-locations">
+                                <span><i class="fas fa-map-marker-alt"></i> Arkadia Zona 10 (Mar/Jue)</span>
+                            </div>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Confirmar Horarios</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="online">
+                    <div class="online-specialty">
+                        <div class="specialty-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Nuestra Especialidad</span>
+                        </div>
+                        <h3>Clases Virtuales - Diferenciador de Elidanza</h3>
+                        <p>Somos pioneros en Guatemala ofreciendo clases de danza completamente virtuales con la misma calidad profesional de nuestras clases presenciales.</p>
+                    </div>
+                    <div class="classes-grid">
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3>Ballet Virtual</h3>
+                            <p class="class-level">Todas las edades</p>
+                            <p class="class-description">Aprende ballet desde casa con instructores profesionales en tiempo real.</p>
+                            <ul class="class-features">
+                                <li>Clases en vivo interactivas</li>
+                                <li>Corrección de técnica en tiempo real</li>
+                                <li>Grabaciones disponibles</li>
+                                <li>Grupos reducidos para atención personalizada</li>
+                            </ul>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Información Virtual</a>
+                        </div>
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h3>Jazz Moderno Virtual</h3>
+                            <p class="class-level">7 años en adelante</p>
+                            <p class="class-description">Creatividad y estilo personal desde la comodidad de tu hogar con música actual.</p>
+                            <ul class="class-features">
+                                <li>Coreografías modernas</li>
+                                <li>Música actual y trending</li>
+                                <li>Desarrollo de estilo único</li>
+                                <li>Presentaciones virtuales</li>
+                            </ul>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Información Virtual</a>
+                        </div>
+                        <div class="class-card">
+                            <div class="class-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Clases Adultos Virtual</h3>
+                            <p class="class-level">Principiantes a Avanzados</p>
+                            <p class="class-description">Flexibilidad total para adultos que buscan aprender danza adaptándose a sus horarios.</p>
+                            <ul class="class-features">
+                                <li>Horarios flexibles</li>
+                                <li>Niveles personalizados</li>
+                                <li>Seguimiento individual</li>
+                                <li>Comunidad virtual activa</li>
+                            </ul>
+                            <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">Información Virtual</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="historia" class="history">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <p class="section-subtitle">Más de una década formando bailarines y creando arte</p>
+            </div>
+            <div class="history-content">
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2010</div>
+                        <div class="timeline-content">
+                            <h3>Los Inicios</h3>
+                            <p>Eli funda Elidanza con la visión de crear un espacio donde la danza sea accesible para todos. Comenzamos con un pequeño estudio en el centro de la ciudad.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h3>Expansión</h3>
+                            <p>Abrimos nuestra segunda sucursal en la zona norte, ampliando nuestro alcance y ofreciendo más horarios para nuestros estudiantes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h3>Adaptación Digital</h3>
+                            <p>Durante la pandemia, desarrollamos nuestro programa de clases online, manteniendo la calidad de enseñanza y llegando a estudiantes de todo el país.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h3>Presente y Futuro</h3>
+                            <p>Hoy somos la academia de danza más reconocida de Guatemala, con más de 500 estudiantes activos y un equipo de instructores de clase mundial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Estudiantes Activos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Presentaciones Anuales</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Sucursales</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte a comenzar tu journey en la danza</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+502 3664-6602</p>
+                            <a href="https://wa.me/+50236646602" class="contact-link" target="_blank">Enviar Mensaje</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p>@elidanza.gt</p>
+                            <a href="https://ig.me/m/Elidanza.gt" class="contact-link" target="_blank">Enviar DM</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>elidanzagt@gmail.com</p>
+                            <a href="mailto:elidanzagt@gmail.com" class="contact-link">Enviar Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <select id="interes" name="interes" required>
+                                <option value="">¿En qué estás interesado?</option>
+                                <option value="ballet">Ballet Clásico</option>
+                                <option value="salsa">Salsa y Bachata</option>
+                                <option value="contemporanea">Danza Contemporánea</option>
+                                <option value="online">Clases Online</option>
+                                <option value="eventos">Eventos y Presentaciones</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más sobre ti y tus objetivos en la danza" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./imagenes/PRUEBA DE LOGO.svg" alt="Elidanza Logo" class="logo" loading="lazy" onerror="this.style.display='none'; console.log('Error loading footer logo')">
+                    </div>
+                    <p class="footer-description">La academia de danza más reconocida de Guatemala. Formamos bailarines y creamos arte desde 2010.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/elidanza.gt/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/+50236646602" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:elidanzagt@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#clases">Clases</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Clases</h3>
+                    <ul class="footer-links">
+                        <li><a href="#clases">Ballet Clásico</a></li>
+                        <li><a href="#clases">Salsa y Bachata</a></li>
+                        <li><a href="#clases">Danza Contemporánea</a></li>
+                        <li><a href="#clases">Clases Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contacto</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +502 3664-6602</p>
+                        <p><i class="fas fa-envelope"></i> elidanzagt@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Zona 10, Ciudad de Guatemala</p>
+                    </div>
+                    <div class="footer-cta">
+                        <a href="https://wa.me/+50236646602" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> ¡Inscríbete Ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Elidanza. Todos los derechos reservados.</p>
+                    <div class="developer-credit">
+                        <img src="./imagenes/Logowhy!.png" alt="Why Media Logo" class="developer-logo" loading="lazy" onerror="this.style.display='none'; console.log('Error loading Why Media logo')">
+                        <span>Desarrollado por <strong>Why Media</strong> - Desarrollo de Software</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
